@@ -1,0 +1,186 @@
+:root{
+    --padding:12px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:12px;
+    background-color: black;
+    color: white;
+}
+
+header .logo{
+    font-size: large;
+}
+
+header .logo i {
+    color: red;
+}
+
+header .icons .fa-magnifying-glass {
+    margin-right: 12px;
+}
+
+.player{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: black;
+}
+
+.player video{
+    width: 100%;
+    height: 700px;
+    max-width: 1000px;
+}
+
+.info{
+    padding: 12px;
+}
+
+.info .metadata .hashtag{
+    display: flex;
+    font-size: 14px;
+    color: blue;
+}
+
+.info .metadata .hashtag li{
+    margin-right:12px;
+}
+
+.info .metadata .hashtag .titleAndButton{
+    display: flex;
+}
+
+.info .metadata .hashtag .titleAndButton .title{
+    font-size: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+    height:100%;
+}
+
+.info .views{
+    font-size: 15px;
+    color: darkgrey;
+
+}
+
+.info .actions{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info .actions button {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.info .actions button i {
+    margin: 0 auto;
+    margin-bottom: calc(12px) /2;
+    font-size: 16px;
+}
+
+.info .actions button i.active{
+    color: blue;
+}
+
+/* channel discription */
+.channel {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.channel .metadata {
+    display: flex;
+    align-items: center;
+}
+
+.channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.channel .metadata img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.channel .metadata .info .name {
+    font-size: 16px;
+}
+
+.channel .metadata .info .subscribers{
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.channel .subscribe {
+    text-transform: uppercase;
+    color: red;
+}
+
+/* upNext */
+.upNext {
+    padding: 0 12px;
+}
+
+.upNext > .title {
+    font-size: 12px;
+    color: darkgrey;
+    margin-bottom: calc(12px) /2;
+}
+
+.upNext .itme {
+    display: flex;
+}
+
+.upNext .itme .img{
+    flex: 1 1 35%;
+}
+
+.upNext .itme .img img{
+    width: 100%;
+}
+
+.upNext .itme .info{
+    flex: 1 1 60%;
+}
+
+.upNext .itme .moreBtn{
+    flex: 1 1 5%;
+}
